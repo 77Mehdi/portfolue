@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Project preview placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset=".46" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#1e1233"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <g opacity=".28">
+    <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M0 600H1200M120 0V720M240 0V720M360 0V720M480 0V720M600 0V720M720 0V720M840 0V720M960 0V720M1080 0V720" stroke="#67e8f9" stroke-width="1"/>
+  </g>
+  <circle cx="600" cy="360" r="180" fill="none" stroke="url(#line)" stroke-width="3" opacity=".75" filter="url(#glow)"/>
+  <circle cx="600" cy="360" r="95" fill="none" stroke="#67e8f9" stroke-width="2" opacity=".55"/>
+  <path d="M420 380h360M500 310h200M535 430h130" stroke="url(#line)" stroke-linecap="round" stroke-width="18" opacity=".95" filter="url(#glow)"/>
+  <text x="600" y="555" fill="#cffafe" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="8" text-anchor="middle">PROJECT PREVIEW</text>
+</svg>
