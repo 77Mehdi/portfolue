@@ -343,12 +343,14 @@ function App() {
 
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 1500);
-    const move = (event: MouseEvent) => {
+
+    const move = (event: globalThis.MouseEvent) => {
       cursorX.set(event.clientX - 160);
       cursorY.set(event.clientY - 160);
     };
 
     window.addEventListener("mousemove", move);
+
     return () => {
       window.clearTimeout(timer);
       window.removeEventListener("mousemove", move);
